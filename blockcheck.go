@@ -50,7 +50,7 @@ func checkFile(markdownFile string) int {
 
 	scanner := bufio.NewScanner(f)
 
-	re := regexp.MustCompile("<!-- MUSTMATCH: ([^ -]+) ?-->")
+	re := regexp.MustCompile("<!-- blockcheck ([^ -]+) ?-->")
 
 	checks := 0
 	for scanner.Scan() {
@@ -105,7 +105,7 @@ func main() {
 
 	for _, f := range fileNames {
 		if *verbose {
-			fmt.Printf("Checking %s: ", f)
+			fmt.Printf("%s: ", f)
 		}
 		checks := checkFile(f)
 		if *verbose {

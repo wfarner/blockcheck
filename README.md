@@ -16,7 +16,7 @@ code blocks in your docs!
 Blockcheck works by scanning Markdown files for sequences like:
 
 <pre>
-&lt;!-- MUSTMATCH: file.txt --&gt;
+&lt;!-- blockcheck file.txt --&gt;
 ```
 A code block, which
 must match file.txt
@@ -29,7 +29,7 @@ Try it!  The block below is kept in sync with `file.txt` in this repository.
 $ blockcheck README.md
 ```
 
-<!-- MUSTMATCH: file.txt -->
+<!-- blockcheck file.txt -->
 ```
 A code block, which
 must match file.txt

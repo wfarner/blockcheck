@@ -2,7 +2,7 @@
 
 This test confirms that a relative path may be used.
 
-<!-- MUSTMATCH: ../data.json -->
+<!-- blockcheck ../data.json -->
 ```json
 {
   "a": "b",
